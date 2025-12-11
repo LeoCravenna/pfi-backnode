@@ -20,7 +20,7 @@ const corsConfig = {
 app.use(cors(corsConfig))
 app.use(express.json())
 
-app.use("/api", rutasLog)
+app.use("/auth", rutasLog)
 
 app.use((req, res, next) => {
     console.log(`Datos received at:  ${req.method} ${req.url}`);
