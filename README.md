@@ -6,35 +6,35 @@ Este proyecto corresponde al **Trabajo Final Integrador del curso de
 Node.js de Talento Tech**.\
 Su objetivo es desarrollar un **backend completo** utilizando:
 
--   Node.js\
--   Express\
--   Firebase Firestore\
--   Autenticación JWT\
+-   Node.js
+-   Express
+-   Firebase Firestore
+-   Autenticación JWT
 -   Arquitectura por capas (rutas, controladores, servicios y modelos)
 
 El sistema expone una **API REST** que permite:
 
--   Gestionar productos: crear, obtener y eliminar\
--   Autenticar usuarios mediante credenciales\
+-   Gestionar productos: crear, obtener y eliminar
+-   Autenticar usuarios mediante credenciales
 -   Proteger rutas privadas con un middleware de autenticación
 
 ## 🔧 Tecnologías Utilizadas
 
--   **Node.js**\
--   **Express**\
--   **Firebase Firestore**\
--   **jsonwebtoken (JWT)**\
--   **CORS**\
--   **body-parser**\
+-   **Node.js**
+-   **Express**
+-   **Firebase Firestore**
+-   **jsonwebtoken (JWT)**
+-   **CORS**
+-   **body-parser**
 -   **dotenv**
 
 ## 📌 Requerimientos Cubiertos
 
 ### **1. Configuración Inicial**
 
--   Proyecto inicializado con `npm init -y`\
--   ESModules habilitado con `"type": "module"`\
--   Script `npm start` configurado\
+-   Proyecto inicializado con `npm init -y`
+-   ESModules habilitado con `"type": "module"`
+-   Script `npm start` configurado
 -   Archivo principal `index.js`
 
 ### **2. Dependencias Instaladas**
@@ -44,10 +44,10 @@ Incluye:\
 
 ### **3. Configuración del Servidor**
 
--   Servidor Express configurado\
--   CORS habilitado\
--   `body-parser` para interpretar JSON\
--   Manejo de rutas no encontradas (404)\
+-   Servidor Express configurado
+-   CORS habilitado
+-   `body-parser` para interpretar JSON
+-   Manejo de rutas no encontradas (404)
 -   Variables en archivo `.env`
 
 ### **4. Rutas**
@@ -55,9 +55,9 @@ Incluye:\
 `src/routes/`
 
 -   **products.routes.js**
-    -   GET `/api/products`\
-    -   GET `/api/products/:id`\
-    -   POST `/api/products/create`\
+    -   GET `/api/products`
+    -   GET `/api/products/:id`
+    -   POST `/api/products/create`
     -   DELETE `/api/products/:id`
 -   **auth.routes.js**
     -   POST `/auth/login`
@@ -68,14 +68,14 @@ Ubicados en `src/controllers/` y `src/services/`.
 
 ### **6. Acceso a los Datos (Firebase)**
 
--   Conexión en `src/data/data.js`\
--   Modelo de productos en `src/models/products.models.js`\
+-   Conexión en `src/data/data.js`
+-   Modelo de productos en `src/models/products.models.js`
 -   Servicios conectados al modelo
 
 ### **7. Protección de Rutas (JWT)**
 
--   Middleware en `src/middleware/authentication.js`\
--   Generación de tokens en `src/data/token.js`\
+-   Middleware en `src/middleware/authentication.js`
+-   Generación de tokens en `src/data/token.js`
 -   Ruta de login devuelve un **Bearer Token** válido
 
 ## 🧩 Estructura del Proyecto
@@ -184,8 +184,8 @@ Este proyecto utiliza **JWT** para proteger rutas privadas.
 
 El middleware `authentication.js` valida:
 
--   Que el header Authorization exista\
--   Que el token sea un Bearer válido\
+-   Que el header Authorization exista
+-   Que el token sea un Bearer válido
 -   Que la firma coincida con el secreto JWT
 
 Si la validación falla → responde con **401 Unauthorized**
