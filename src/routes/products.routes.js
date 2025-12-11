@@ -20,7 +20,4 @@ routes.delete("/products/:id", authentication, deleteProduct)
 
 routes.put("/products/:id", authentication, editProduct)
 
-//routes.post("/products", )
-
-
 export default routes;

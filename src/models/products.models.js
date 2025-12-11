@@ -24,7 +24,6 @@ export function obtenerProducto(id){
   })
   
 }
-//obtenerProducto(id)
 
 export function obtenerProductos(){
   return(
@@ -65,8 +64,6 @@ export function agregarProducto(producto){
 
 }
 
-//agregarProducto({nombre: "yerba", categoria: "infusion", precio: 200})
-
 export function actualizarProducto(id, producto){
   return(
     new Promise(async (res, rej) => {
@@ -84,8 +81,6 @@ export function actualizarProducto(id, producto){
   )
 
 }
-
-//actualizarProducto({id: "6VOeGkGEHLxBrdU3QVzV", precio: 220})
 
 export function eliminarProducto(id){
   return(
